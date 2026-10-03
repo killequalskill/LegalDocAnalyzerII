@@ -7,6 +7,7 @@ from app.db.session import engine
 from app.db.base import Base
 from app.db import models as db_models  # Import to register models
 from app.db import clause_models as clause_db_models  # Import to register models
+from app.db import embedding_models as embedding_db_models  # Import to register models
 
 setup_logging()
 
