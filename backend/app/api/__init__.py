@@ -5,6 +5,7 @@ from app.api.routes.analysis import router as analysis_router
 from app.api.routes.search import router as search_router
 from app.api.routes.qa import router as qa_router
 from app.api.routes.flags import router as flags_router
+from app.api.routes.comparison import router as comparison_router
 
 api_router = APIRouter()
 api_router.include_router(health_router, tags=["health"])
@@ -13,3 +14,4 @@ api_router.include_router(analysis_router)
 api_router.include_router(search_router)
 api_router.include_router(qa_router)
 api_router.include_router(flags_router)
+api_router.include_router(comparison_router)
