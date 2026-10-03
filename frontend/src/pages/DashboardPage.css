@@ -1,0 +1,226 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-button {
+  padding: 8px 16px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background: #d0d0d0;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  flex: 1;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  background: #e0e0e0;
+}
+
+.tab.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.tab-content {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 400px;
+}
+
+/* Clauses View */
+.clauses-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.clauses-view th {
+  background: #f0f0f0;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.clauses-view td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.clauses-view tr:hover {
+  background: #fafafa;
+}
+
+/* Flags View */
+.flag-card {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.flag-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flag-header h3 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.severity {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.flag-reason {
+  margin: 10px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.flag-source {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* QA View */
+.question-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.question-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.question-input button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.question-input button:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.question-input button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.evidence {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.evidence.sufficient {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.evidence.insufficient {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.answer-text {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f5f5f5;
+  border-left: 4px solid #4CAF50;
+  border-radius: 4px;
+}
+
+.answer-text p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.citations {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.citations h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.citation {
+  margin-bottom: 12px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.citation small {
+  color: #999;
+  font-size: 12px;
+}
+
+.citation p {
+  margin: 5px 0 0 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
